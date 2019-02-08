@@ -14,7 +14,7 @@ void loop()
 {
   delay(1000);
 
-  //movimiento recto
+  //move forward
   while(ultrasonic.distanceCm() > 10)
   {
     motor1.run(-100);
@@ -23,7 +23,7 @@ void loop()
   motor1.stop();
   motor2.stop();
   delay(1000);
-  //girar a la izquierda
+  //turn left
   motor1.run(50);
   motor2.run(80);
   delay(1000);
